@@ -1,0 +1,8 @@
+[project]
+name = "stacks-token"
+description = "A custom fungible token built using Clarity on the Stacks blockchain."
+authors = ["Hammed Yakub <hamsohood@gmail.com>"]
+contracts = ["token"]
+
+[contracts.token]
+path = "contracts/token.clar"
