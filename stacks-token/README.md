@@ -1,22 +1,21 @@
-# Hammed Token (HAM)
+# Hammed Token (HAM) – Phase 2
 
-## Description
-A simple fungible token built on the Stacks Blockchain using Clarity. Inspired by ERC-20.
+## Updates
+This is an improved version of the original token contract, featuring:
+- Prevention of zero-value transfers
+- New functionality: `burn` method to destroy tokens
+- Improved security checks
 
 ## Features
 - Fixed total supply (1,000,000 HAM)
 - Balance tracking
 - Transfer function
-
-## Token Details
-- Name: Hammed Token
-- Symbol: HAM
-- Decimals: 6
+- Token burning
 
 ## Setup
 
 ### Prerequisites
-- Install Clarinet from [Stacks documentation](https://docs.stacks.co/docs/clarity/clarinet/overview/).
+- Install Clarinet from [Stacks documentation](https://docs.stacks.co/docs/clarity/clarinet/overview/)
 
 ### Run Project
 ```bash
@@ -24,8 +23,9 @@ clarinet check
 clarinet test
 ```
 
-### Contract Deployment
-Instructions will depend on your deployment environment. Typically, use the `clarinet deploy` command or deploy manually via the Stacks web wallet.
+### Contracts
+- `token.clar` - Main token logic
+- `burn.clar` - Allows users to burn (destroy) part of their balance
 
 ## Author
 Hammed Yakub
